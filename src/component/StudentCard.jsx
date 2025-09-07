@@ -7,7 +7,7 @@ import{Link} from 'react-router-dom'
 function StudentCard({id,name,city, laodStudent}) {
 
   const deleteStudent=async(id)=>{
-    const response=await axios.delete(`http://localhost:5001/studentsd/${id}`);
+    const response=await axios.delete(`https://backend-e9jw.onrender.com/studentsd/${id}`);
     if(response.data.success){
       // window.location.reload();
       laodStudent();

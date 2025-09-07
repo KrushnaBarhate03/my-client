@@ -24,7 +24,7 @@ function Home() {
     ])
 
     const loadStudent=async()=>{
-        const response= await axios.get("http://localhost:5001/students");
+        const response= await axios.get("https://backend-e9jw.onrender.com/students");
         setStudent(response.data.data);
     }
     useEffect(()=>{

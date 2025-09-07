@@ -14,7 +14,7 @@ function Addd() {
        //Use try and catch block for the following code try yourself
   const addStudent = async () => {
   try {
-    const response = await axios.post("http://localhost:5001/students", {
+    const response = await axios.post("https://backend-e9jw.onrender.com/students", {
       id: student.id,
       name: student.name,
       city: student.city,
